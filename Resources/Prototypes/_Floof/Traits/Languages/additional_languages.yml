@@ -4,7 +4,7 @@
   name: trait-SignLanguage-name
   description: trait-SignLanguage-desc
   category: Languages
-  cost: 2
+  cost: 1 # Was 2, changed to 1 based on request from multiple people on Discord.
   effects:
   - !type:ModifyLanguagesTraitEffect
     languagesSpoken:
