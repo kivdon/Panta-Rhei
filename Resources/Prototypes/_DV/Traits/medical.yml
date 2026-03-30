@@ -96,6 +96,7 @@
   name: trait-synth-name
   description: trait-synth-desc
   category: Medical
+  cost: 0
   conditions:
   - !type:HasCompCondition
     component: Silicon
