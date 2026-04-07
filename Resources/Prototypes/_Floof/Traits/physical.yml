@@ -224,9 +224,9 @@
 
 
   - type: trait
-  id: Singer
-  name: trait-singer-name
-  description: trait-singer-desc
+  id: AudioPlayer
+  name: trait-name-AudioPlayer
+  description: trait-description-AudioPlayer
   category: Skills
   points: -1
   - !type:OneOfSpeciesCondition
