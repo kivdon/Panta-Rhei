@@ -208,3 +208,32 @@
     multiplier: 0.5
 # =================================================== #
 
+#- type: trait
+#  id: AudioPlayer
+#  category: Auditory
+#  points: -2
+#  requirements:
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - IPC
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: Singer
+#          proto: SiliconSinger
+
+
+  - type: trait
+  id: Singer
+  name: trait-singer-name
+  description: trait-singer-desc
+  category: Skills
+  points: -1
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Harpy
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: HarpySinger
