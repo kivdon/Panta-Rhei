@@ -109,5 +109,5 @@
     components:
     - type: HarpySinger
     - type: Instrument
-    allowPercussion: false
-    program: 52
+      allowPercussion: false
+      program: 52
