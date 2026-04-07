@@ -16,3 +16,5 @@ trait-weaponsgeneralist-desc =
     You are a jack of all trades with melee weapons, enabling you to be versatile with your weapon arsenal.
     Your melee damage bonus for all Brute damage types (Blunt, Slash, Piercing) becomes 30%.
 
+trait-name-AudioPlayer = Singer
+trait-description-AudioPlayer = You've got a voice, let it be heard!
