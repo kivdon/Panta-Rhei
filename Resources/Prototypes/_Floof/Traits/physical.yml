@@ -208,21 +208,6 @@
     multiplier: 0.5
 # =================================================== #
 
-#- type: trait
-#  id: AudioPlayer
-#  category: Auditory
-#  points: -2
-#  requirements:
-#    - !type:CharacterSpeciesRequirement
-#      species:
-#        - IPC
-#  functions:
-#    - !type:TraitAddComponent
-#      components:
-#        - type: Singer
-#          proto: SiliconSinger
-
-
   - type: trait
   id: AudioPlayer
   category: Cybernetics
@@ -239,5 +224,5 @@
     components:
     - type: HarpySinger
     - type: Instrument
-  allowPercussion: false
-  program: 52
+    allowPercussion: false
+    program: 52
