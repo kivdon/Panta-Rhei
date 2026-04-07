@@ -95,7 +95,7 @@
 
   - type: trait
   id: AudioPlayer
-  category: Cybernetics
+  category: Skills
   name: trait-name-AudioPlayer
   description: trait-description-AudioPlayer
   cost: 1
