@@ -108,6 +108,3 @@ trait-description-BigMilkProducer = You have a pair of large mammaries. They con
 
 trait-name-BigSquirtProducer = Pussy - Water Feature
 trait-description-BigSquirtProducer = You have a slit between your legs. It contains a massive amount of squirt.
-
-trait-name-AudioPlayer = Singer
-trait-description-AudioPlayer = You've got a voice, let it be heard!
