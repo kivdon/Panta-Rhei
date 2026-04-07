@@ -225,10 +225,11 @@
 
   - type: trait
   id: AudioPlayer
+  category: Cybernetics
   name: trait-name-AudioPlayer
   description: trait-description-AudioPlayer
-  category: Skills
-  points: -1
+  cost: 1
+  conditions:
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -237,3 +238,6 @@
   - !type:AddCompsEffect
     components:
     - type: HarpySinger
+    - type: Instrument
+  allowPercussion: false
+  program: 52
