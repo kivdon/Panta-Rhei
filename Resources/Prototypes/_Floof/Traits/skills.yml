@@ -93,21 +93,21 @@
           Asphyxiation: 1.35
 # =================================================== #
 
-  - type: trait
-    id: AudioPlayer
-    category: Skills
-    name: trait-name-AudioPlayer
-    description: trait-description-AudioPlayer
-    cost: 1
-    conditions:
-    - !type:OneOfSpeciesCondition
-      invert: true
-      species:
-      - Harpy
-    effects:
-    - !type:AddCompsEffect
-      components:
-      - type: HarpySinger
-      - type: Instrument
-        allowPercussion: false
-        program: 52
+- type: trait
+  id: AudioPlayer
+  category: Skills
+  name: trait-name-AudioPlayer
+  description: trait-description-AudioPlayer
+  cost: 1
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Harpy
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: HarpySinger
+    - type: Instrument
+    allowPercussion: false
+    program: 52
