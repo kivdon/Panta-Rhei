@@ -130,6 +130,8 @@
       state: alive-unshaded
       shader: unshaded
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+  - type: BodyEmotes
+      soundsId: ReptilianBodyEmotes
   - type: Tag
     tags:
     - CannotSuicide
@@ -164,6 +166,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
+  - type: BodyEmotes
+      soundsId: ReptilianBodyEmotes
   - type: NpcFactionMember
     factions:
     - Dragon
@@ -215,6 +219,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
+  - type: BodyEmotes
+      soundsId: ReptilianBodyEmotes
   - type: NpcFactionMember
     factions:
     - Dragon
