@@ -108,3 +108,15 @@ pain-effect1 = A dull ache pulses through your body.
 pain-effect2 = Sharp stabs of pain make you wince.
 pain-effect3 = You feel an intense, throbbing pain that clouds your thoughts.
 pain-effect4 = Waves of agonizing pain make it hard to focus on anything else.
+
+# Alcoholic effects
+alcoholic-effect1 = It has been a while since your last drink, hasn't it?
+alcoholic-effect2 = There's gotta be booze around here somewhere...
+alcoholic-effect3 = Why is the rum gone?
+alcoholic-effect4 = The bottle calls for you. Heed it. 
+
+# Normal alcoholic soothe
+reagent-effect-alcoholic-normal1 = The alcohol soothes the cravings.
+
+# Alcoholic soothe fade (This might not get used?)
+reagent-effect-alcoholic-fade = The buzz has faded...
