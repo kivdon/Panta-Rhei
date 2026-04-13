@@ -31,7 +31,7 @@
 - type: trait
   id: Alcoholic
   name: trait-alcoholic-name
-  description: trait-Alcoholic-desc
+  description: trait-alcoholic-desc
   category: DisabilitiesMental # Euphoria
   cost: -1
   effects:
