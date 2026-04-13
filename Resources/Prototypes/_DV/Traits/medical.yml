@@ -28,18 +28,18 @@
   - !type:SpawnItemInHandEffect
     item: PillCanisterSoretizone
 
-  - type: trait
-    id: Alcoholic
-    name: trait-alcoholic-name
-    description: trait-Alcoholic-desc
-    category: DisabilitiesMental # Euphoria
-    cost: -1
-    effects:
-    - !type:AddCompsEffect
-      components:
-      - type: ChronicPain
-    - !type:SpawnItemInHandEffect
-      item: DrinkVodkaGlass
+- type: trait
+  id: Alcoholic
+  name: trait-alcoholic-name
+  description: trait-Alcoholic-desc
+  category: DisabilitiesMental # Euphoria
+  cost: -1
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: ChronicPain
+  - !type:SpawnItemInHandEffect
+    item: DrinkVodkaGlass
 
 - type: trait
   id: LightweightDrunk
