@@ -30,6 +30,9 @@ trait-uncloneable-desc = You cannot be cloned.
 trait-chronic-pain-name = Chronic pain
 trait-chronic-pain-desc = You're constantly in discomfort. You need painkillers to function.
 
+trait-alcoholic-name = Alcoholic
+trait-alcoholic-desc = You're constantly in need of the bottle. You require ethanol to function.
+
 trait-addicted-name = Addicted
 trait-addicted-desc = You crave the substance, and your thoughts keep drifting back to it. Without it, you feel incomplete, anxious, and on edge.
 
