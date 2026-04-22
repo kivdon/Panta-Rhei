@@ -1799,11 +1799,11 @@
   description: It's small, red, and adorable! Complete with small frills, and big black eyes.
   components:
   - type: Sprite
-    sprite: _Floof/Objects/Fun/redlizard.rsi
+    sprite: _Floof/Objects/Fun/redlizardplushie.rsi
     state: icon
   - type: Clothing
     quickEquip: false
-    sprite: _Floof/Objects/Fun/redlizard.rsi
+    sprite: _Floof/Objects/Fun/redlizardplushie.rsi
     slots:
     - HEAD
   - type: EmitSoundOnUse
