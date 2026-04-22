@@ -67,7 +67,7 @@
               Slash: 0.9
               Piercing: 0.9
     - !type:ModifyStaminaThresholdEffect #Possible additional downside. Would probably need to conflict with stamina traits?
-      multiplier: 0.8
+      multiplier: 0.7
 
 # =================================================== #
 
