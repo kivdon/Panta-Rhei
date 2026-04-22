@@ -11,7 +11,7 @@ trait-small-desc = You are able to climb into spaces others would not normally b
 
 trait-tiny-name = Tiny
 trait-tiny-desc = You are able to climb into extremely small places! Beware, you are not as strong. 
-examine-tiny-trait-message
+examine-tiny-trait-message = This person is very small, be careful!
 
 trait-swashbuckler-name = Swashbuckler
 trait-swashbuckler-desc =
