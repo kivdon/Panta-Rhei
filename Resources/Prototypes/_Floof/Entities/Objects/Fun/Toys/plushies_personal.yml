@@ -1812,13 +1812,13 @@
       params:
         volume: 1
   - type: EmitSoundOnLand
-    sound: &landCj
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+    sound: &landRL
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_purr1.ogg
       params:
         volume: 2
         variation: 0.1
   - type: EmitSoundOnCollide
-    sound: *landCj
+    sound: *landRL
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/_Floof/Voice/Reptilian/yip.ogg
