@@ -306,3 +306,27 @@
           Blunt: 1
 # =================================================== #
 
+# ==============Temperature Tolerance================ #
+- type: trait
+  id: ColdTolerance
+  name: trait-coldtolerance-name
+  description: trait-coldtolerance-desc
+  category: Skills
+  cost: 1 
+  conditions:
+  - !type:HasCompCondition
+    component: BorgChassis
+    invert: true
+  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (only vulpkanin?)
+    invert: true
+    species:
+    - Vulpkanin
+  effects:
+  #- type: Temperature
+  #  coldDamageThreshold: 220 # 40 lower than base, same as Vulpkanin
+  - !type:OverrideCompsEffect
+    components:
+    - type: Temperature
+      coldDamageThreshold: 220 # 40 lower than base, same as Vulpkanin
+
+# =================================================== #
