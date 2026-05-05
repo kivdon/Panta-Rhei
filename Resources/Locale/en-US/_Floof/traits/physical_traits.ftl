@@ -42,3 +42,11 @@ trait-Improved-Unarmed-desc =
     You hit harder than most when you punch, where from having striking calluses, improved strength, or just better technique.
     Increases unarmed melee damage by 1 blunt. Does not confer any benefit to armed melee.
 
+trait-coldtolerance-name = Cold Tolerance
+trait-coldtolerance-desc = 
+    Those who complain about the cold are just whining. Your tolerance for cold temperatures is much more robust than most.
+    (Equivalent to Vulpkanin cold tolerance)
+
+trait-heattolerance-name = Heat Tolerance
+trait-heattolerance-desc = 
+    Those who complain about the heat are just whining. Your tolerance for hot temperatures is much more robust than most.
