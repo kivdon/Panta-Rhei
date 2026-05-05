@@ -329,4 +329,24 @@
     - type: Temperature
       coldDamageThreshold: 220 # 40 lower than base, same as Vulpkanin
 
+- type: trait
+  id: HeatTolerance
+  name: trait-heattolerance-name
+  description: trait-heattolerance-desc
+  category: Skills
+  cost: 1 
+  conditions:
+  - !type:HasCompCondition
+    component: BorgChassis
+    invert: true
+  #- !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (none have heat tolerance?)
+  #  invert: true
+  #  species:
+  #  - Vulpkanin
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Temperature
+      heatDamageThreshold: 365 # 40 higher than base
+
 # =================================================== #
