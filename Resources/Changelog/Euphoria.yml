@@ -2627,3 +2627,9 @@ Entries:
       message: Changed the announcer voicelines to use a toned down effect.
   id: 329
   time: '2026-05-06T11:08:42.0000000+00:00'
+- author: Cprn-Sprkl
+  changes:
+    - type: Add
+      message: Sample Collectors have arrived to service station crew.
+  id: 330
+  time: '2026-05-06T11:15:42.0000000+00:00'
