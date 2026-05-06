@@ -2611,3 +2611,11 @@ Entries:
       message: Fixed an issue with bibles.
   id: 327
   time: '2026-05-06T07:55:26.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The "spawn here" admin verb now loads the loadouts & traits from the
+        player's profile (while assuming Passenger as the job).
+  id: 328
+  time: '2026-05-06T10:57:47.0000000+00:00'
