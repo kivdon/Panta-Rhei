@@ -2673,3 +2673,13 @@ Entries:
         table so that isn't hidden anymore.
   id: 335
   time: '2026-05-06T12:17:59.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: New types of fish can be found when fishing.
+    - type: Add
+      message: >-
+        Some of these fish will provide new kinds of fish meat when butchered
+        that can be used for very specific recipies.
+  id: 336
+  time: '2026-05-07T23:35:48.0000000+00:00'
