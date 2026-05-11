@@ -322,7 +322,7 @@
     - Vulpkanin
   effects:
   - !type:ModifyTemperatureToleranceEffect
-    ColdToleranceModifier: -40 # 40 better (more tolerant) than base (which should be 260), same as Vulpkanin
+    coldToleranceModifier: -40 # 40 better (more tolerant) than base (which should be 260), same as Vulpkanin
 
 - type: trait
   id: HeatTolerance
@@ -339,6 +339,6 @@
   #  - Vulpkanin
   effects:
   - !type:ModifyTemperatureToleranceEffect
-    HeatToleranceModifier: 40 # 40 better (more tolerant) than base (which should be 325).
+    heatToleranceModifier: 40 # 40 better (more tolerant) than base (which should be 325).
 
 # =================================================== #
