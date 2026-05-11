@@ -313,6 +313,8 @@
   description: trait-coldtolerance-desc
   category: Skills
   cost: 1 
+  conflicts:
+    - ColdIntolerance
   conditions:
   - !type:HasCompCondition
     component: Temperature
@@ -335,6 +337,8 @@
   description: trait-heattolerance-desc
   category: Skills
   cost: 1 
+  conflicts:
+    - HeatIntolerance
   conditions:
   - !type:HasCompCondition
     component: Temperature
@@ -348,5 +352,51 @@
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: 40 # 40 better (more tolerant) than base (which should be 325).
+
+- type: trait
+  id: ColdIntolerance
+  name: trait-coldintolerance-name
+  description: trait-coldintolerance-desc
+  category: Skills
+  cost: 1 
+  conflicts:
+    - ColdTolerance
+  conditions:
+  - !type:HasCompCondition
+    component: Temperature
+  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better 
+    invert: true
+    species:
+    #- Vulpkanin #220
+    - Vox #-200, Jesus. Vox don't take cold damage.
+    #- Moth #230
+    #- Chitinid #230
+    #- Avali #223
+    #- Tajaran #248.15
+  effects:
+  - !type:ModifyTemperatureToleranceEffect
+    coldToleranceModifier: 40 # 40 worse (less tolerant) than base (which should be 260)
+
+- type: trait
+  id: HeatIntolerance
+  name: trait-heatintolerance-name
+  description: trait-heatintolerance-desc
+  category: Skills
+  cost: 1 
+  conflicts:
+    - HeatTolerance
+  conditions:
+  - !type:HasCompCondition
+    component: Temperature
+  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (only reptilian?)
+    invert: true
+    species:
+    #- Reptilian #Holy 400 heat tolerance, Batman
+    #- Moth #320
+    #- Chitinid #320
+    #- Avali #310
+  effects:
+  - !type:ModifyTemperatureToleranceEffect
+    heatToleranceModifier: -40 # 40 worse (less tolerant) than base (which should be 325).
 
 # =================================================== #
