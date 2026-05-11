@@ -50,3 +50,11 @@ trait-coldtolerance-desc =
 trait-heattolerance-name = Heat Tolerance
 trait-heattolerance-desc = 
     Those who complain about the heat are just whining. Your tolerance for hot temperatures is much more robust than most.
+
+trait-coldintolerance-name = Cold Intolerance
+trait-coldintolerance-desc = 
+    Whether by growing up in a hot place, or from some genetic reason, your tolerance for cold temperatures is worse than others of your species.
+
+trait-heatintolerance-name = Heat Intolerance
+trait-heatintolerance-desc = 
+    Whether by growing up in a cold place, or from some genetic reason, your tolerance for hot temperatures is worse than others of your species.
