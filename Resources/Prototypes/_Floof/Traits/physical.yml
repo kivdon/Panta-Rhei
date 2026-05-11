@@ -316,10 +316,15 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (only vulpkanin?)
+  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better 
     invert: true
     species:
-    - Vulpkanin
+    - Vulpkanin #220
+    - Vox #-200, Jesus
+    #- Moth #230
+    #- Chitinid #230
+    - Avali #223
+    #- Tajaran #248.15
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: -40 # 40 better (more tolerant) than base (which should be 260), same as Vulpkanin
@@ -333,10 +338,13 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  #- !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (none have heat tolerance?)
-  #  invert: true
-  #  species:
-  #  - Vulpkanin
+  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (only reptilian?)
+    invert: true
+    species:
+    - Reptilian #Holy 400 heat tolerance, Batman
+    #- Moth #320
+    #- Chitinid #320
+    #- Avali #310
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: 40 # 40 better (more tolerant) than base (which should be 325).
