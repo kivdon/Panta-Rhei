@@ -505,10 +505,10 @@
     invert: true
     species:
     #- Reptilian #Holy 400 heat tolerance, Batman. Giving intolerance wouldn't make much of a difference, might just be free points, basically.
-    - Moth #320 I think a change of 40 would make them start taking damage at room temperature.
+    - Moth #320 Constant warning at 10 below their normal.
     - Chitinid #320
-    - Avali #310
-    - Resomi #320.15
+    - Avali #310 Too dangerous.
+    - Resomi #320.15 Constant warning at 10 below their normal.
     #- Shadowkin #330
   effects:
   - !type:ModifyTemperatureToleranceEffect
