@@ -45,7 +45,6 @@ trait-Improved-Unarmed-desc =
 trait-coldtolerance-name = Cold Tolerance
 trait-coldtolerance-desc = 
     Your tolerance for cold temperatures is a bit more robust than most of your species.
-    (Equivalent to Vulpkanin cold tolerance)
 
 trait-coldtoleranceadvanced-name = Cold Tolerance - Advanced
 trait-coldtoleranceadvanced-desc = 
