@@ -486,7 +486,7 @@
     component: Temperature
   effects:
   - !type:ModifyTemperatureToleranceEffect
-    heatToleranceModifier: -10 # 10 worse (less tolerant) than base (which should be 325).
+    heatToleranceModifier: -5 # 5 worse (less tolerant) than base (which should be 325).
 
 - type: trait
   id: HeatIntoleranceAdvanced
@@ -509,9 +509,9 @@
     - Chitinid #320
     - Avali #310
     - Resomi #320.15
-    - Shadowkin #330
+    #- Shadowkin #330
   effects:
   - !type:ModifyTemperatureToleranceEffect
-    heatToleranceModifier: -40 # 40 worse (less tolerant) than base (which should be 325).
+    heatToleranceModifier: -10 # 10 worse (less tolerant) than base (which should be 325).
 
 # =================================================== #
