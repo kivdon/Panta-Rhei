@@ -327,6 +327,8 @@
     #- Chitinid #230
     - Avali #223
     #- Tajaran #248.15
+    - Resomi #195.4
+    - Shadekin #195
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: -40 # 40 better (more tolerant) than base (which should be 260), same as Vulpkanin
@@ -349,6 +351,8 @@
     #- Moth #320
     #- Chitinid #320
     #- Avali #310
+    #- Resomi #320.15
+    #- Shadekin #330
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: 40 # 40 better (more tolerant) than base (which should be 325).
@@ -364,7 +368,7 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better 
+  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger at room temperature (none of them?)
     invert: true
     species:
     #- Vulpkanin #220
@@ -373,6 +377,8 @@
     #- Chitinid #230
     #- Avali #223
     #- Tajaran #248.15
+    #- Resomi #195.4
+    #- Shadekin #195
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: 40 # 40 worse (less tolerant) than base (which should be 260)
@@ -388,13 +394,15 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which already have this tolerance or something better (only reptilian?)
+  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger of regular room temperature.
     invert: true
     species:
-    #- Reptilian #Holy 400 heat tolerance, Batman
-    #- Moth #320
-    #- Chitinid #320
-    #- Avali #310
+    #- Reptilian #Holy 400 heat tolerance, Batman. Giving intolerance wouldn't make much of a difference, might just be free points, basically.
+    - Moth #320 I think a change of 40 would make them start taking damage at room temperature.
+    - Chitinid #320
+    - Avali #310
+    - Resomi #320.15
+    - Shadekin #330
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: -40 # 40 worse (less tolerant) than base (which should be 325).
