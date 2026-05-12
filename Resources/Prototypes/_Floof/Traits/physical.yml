@@ -484,15 +484,6 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger of regular room temperature.
-    invert: true
-    species:
-    #- Reptilian #Holy 400 heat tolerance, Batman. Giving intolerance wouldn't make much of a difference, might just be free points, basically.
-    #- Moth #320 I think a change of 20 would make them start taking damage at room temperature.
-    #- Chitinid #320
-    #- Avali #310
-    #- Resomi #320.15
-    #- Shadekin #330
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: -10 # 10 worse (less tolerant) than base (which should be 325).
