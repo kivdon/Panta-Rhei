@@ -430,7 +430,7 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger at room temperature (none of them?)
+  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger at room temperature (maybe reptilian)
     invert: true
     species:
     #- Vulpkanin #220
@@ -441,7 +441,7 @@
     #- Tajaran #248.15
     #- Resomi #195.4
     #- Shadowkin #195
-    #- Reptilian #285
+    - Reptilian #285 #At 20 intolerance, they're just barely on the cusp. The "you're too cold" warning keeps going back and forth. 
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: 20 # 20 worse (less tolerant) than base (which should be 260)
@@ -459,7 +459,7 @@
   conditions:
   - !type:HasCompCondition
     component: Temperature
-  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger at room temperature (none of them?)
+  - !type:OneOfSpeciesCondition # Don't give it to species which would put them in danger at room temperature (reptilian)
     invert: true
     species:
     #- Vulpkanin #220
