@@ -331,6 +331,7 @@
     #- Tajaran #248.15
     - Resomi #195.4
     - Shadowkin #195
+    #- Reptilian #285
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: -20 # 20 better (more tolerant) than base (which should be 260)
@@ -359,6 +360,7 @@
     #- Tajaran #248.15
     - Resomi #195.4
     - Shadowkin #195
+    #- Reptilian #285
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: -40 # 40 better (more tolerant) than base (which should be 260), same as Vulpkanin
@@ -439,6 +441,7 @@
     #- Tajaran #248.15
     #- Resomi #195.4
     #- Shadowkin #195
+    #- Reptilian #285
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: 20 # 20 worse (less tolerant) than base (which should be 260)
@@ -467,6 +470,7 @@
     #- Tajaran #248.15
     #- Resomi #195.4
     #- Shadowkin #195
+    - Reptilian #285
   effects:
   - !type:ModifyTemperatureToleranceEffect
     coldToleranceModifier: 40 # 40 worse (less tolerant) than base (which should be 260)
