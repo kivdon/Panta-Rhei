@@ -84,7 +84,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35 #Was 0.42. Base radius is 0.35
+          radius: 0.40 #Was 0.42. Base radius is 0.35
         density: 220 #Euphoria change. Was 220. Max height Chitinids get stuck in doors. Base species density is 185. Base density with Heavyweight trait should be 259. 
         restitution: 0.0
         mask:
