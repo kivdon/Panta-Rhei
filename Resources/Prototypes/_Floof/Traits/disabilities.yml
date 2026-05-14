@@ -36,7 +36,7 @@
     species:
     - Harpy # Doesn't really make sense with their wings and flight ability
     - Diona # Trees are heavy as it is.
-    - Chitinid # Ants got weight.
+    #- Chitinid # Ants got weight.
   conflicts:
     - Lightweight
   effects:
