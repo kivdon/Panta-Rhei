@@ -2875,3 +2875,11 @@ Entries:
         as Lavaland Wilds
   id: 358
   time: '2026-05-16T04:58:22.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        The clicker is back, it is now available in loadouts and in the Pet Shop
+        Vending machine.
+  id: 359
+  time: '2026-05-16T05:47:07.0000000+00:00'
