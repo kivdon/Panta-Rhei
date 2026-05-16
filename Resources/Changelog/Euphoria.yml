@@ -2851,3 +2851,27 @@ Entries:
       message: Removed the placeholder snacks from the Petshop Vendor.
   id: 357
   time: '2026-05-16T03:16:32.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: Lavaland map generation
+    - type: Add
+      message: Legion mobs to Lavaland
+    - type: Add
+      message: Ruins to Lavaland generation
+    - type: Add
+      message: New materials to find (no recipes yet)
+    - type: Add
+      message: SpawnLootOnDeath Component
+    - type: Add
+      message: >-
+        Components that allow for biomes to be generated on the same map, along
+        with Planets.
+    - type: Add
+      message: Lavaland Wilds to the Lavaland Shuttle destinations
+    - type: Tweak
+      message: >-
+        Old Lavaland is now known as Lavaland Mines, and new Lavaland is known
+        as Lavaland Wilds
+  id: 358
+  time: '2026-05-16T04:58:22.0000000+00:00'
