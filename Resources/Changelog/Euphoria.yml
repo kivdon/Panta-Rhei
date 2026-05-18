@@ -2927,3 +2927,12 @@ Entries:
       message: Signing now only requires one free hand rather than two.
   id: 366
   time: '2026-05-18T04:14:15.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Lewd traits that increase the maximum amount of fluid production should
+        now correctly increase the organ fluid capacity to accommodate for
+        additional fluids.
+  id: 367
+  time: '2026-05-18T10:26:05.0000000+00:00'
