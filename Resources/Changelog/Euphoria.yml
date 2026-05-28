@@ -3194,3 +3194,9 @@ Entries:
       message: Tarot cards should now stack properly.
   id: 400
   time: '2026-05-28T10:06:57.0000000+00:00'
+- author: XavyBoio
+  changes:
+    - type: Add
+      message: Added Medical Tablet and Security Tablet!
+  id: 401
+  time: '2026-05-28T10:08:44.0000000+00:00'
