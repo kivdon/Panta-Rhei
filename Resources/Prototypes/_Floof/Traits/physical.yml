@@ -517,3 +517,16 @@
   effects:
   - !type:ModifyTemperatureToleranceEffect
     heatToleranceModifier: -10 # 10 worse (less tolerant) than base (which should be 325).
+# =================================================== #
+
+# =============Crit and Dead Threshold=============== #
+- type: trait
+  id: GlassJaw
+  name: trait-glassjaw-name
+  description: trait-glassjaw-desc
+  category: Skills
+  cost: -2
+  effects:
+  - !type:ModifyCritDeadThresholdEffect
+    critModifier: 0.85 #-15%
+# =================================================== #
