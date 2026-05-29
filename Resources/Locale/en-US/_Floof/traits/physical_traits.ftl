@@ -79,3 +79,23 @@ trait-glassjaw-name = Glass Jaw
 trait-glassjaw-desc = 
     Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
     Your damage threshold for becoming Critical is decreased by 15%.
+
+trait-willtodie-name = Will To Die
+trait-willtodie-desc = 
+    You have an unusually weak "will to live", and will succumb to injuries sooner than others.
+    Your damage threshold for becoming Dead is decreased by 10%.
+
+trait-tenacity-name = Tenacity
+trait-tenacity-desc = 
+    Whether it be through raw grit, willpower, or subtle bionic augmentations, you are hardier than others.
+    Your damage threshold for becoming Critical is increased by 5%.
+
+trait-willtolive-name = Will To Live
+trait-willtolive-desc = 
+    You have an unusually strong "will to live", and will resist death more than others.
+    Your damage threshold for becoming Dead is increased by 5%.
+
+trait-brittlebone-name = Brittle Bones
+trait-brittlebone-desc = 
+    People with this genetic disorder have bones that are easily broken, often simply by moving. 
+    This trait reduces your threshold for critical injury by 50%, and reduces your death threshold by 25%.
