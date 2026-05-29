@@ -2,6 +2,7 @@ using Content.Shared._DV.Traits.Effects;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
+using System.Linq;
 
 namespace Content.Shared._Floof.Traits.Effects;
 
@@ -32,8 +33,8 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
         newDict.Add(0, MobState.Alive);
 
         // Make some temporary values to capture the existing Crit and Dead values. 
-        var newCrit = threshDict.Thresholds.FirstOrDefault(x => x.Value == "Critical").Key;
-        var newDead = threshDict.Thresholds.FirstOrDefault(x => x.Value == "Dead").Key;
+        var newCrit = threshDict.Thresholds.FirstOrDefault(x => x.Value == MobState.Critical).Key;
+        var newDead = threshDict.Thresholds.FirstOrDefault(x => x.Value == MobState.Dead).Key;
 
         // Make some temporary values to capture the existing Crit and Dead values. 
         //var newCrit = 0f;
@@ -115,33 +116,7 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
             newDict.Add(1, "Dead");
         }
 */
-/*
-        //Make changes only if something is passed in via the trait.
-        if (CritModifier != 0} {
-          newCrit = newCrit * CritModifier;
 
-          //Safeguard to make sure this value will not be too low, though this shouldn't happen.
-          if (newCrit <= 5) {
-            newCrit = 5;
-          }
-        }
-
-        //Make changes only if something is passed in via the trait.
-        if (DeadModifier != 0} {
-          newDead = newDead * DeadModifier;
-
-          //Safeguard to make sure Dead is not less than or equal to Crit.
-          if (newDead <= newCrit) {
-            newDead = newCrit + 0.1;
-          }
-        }
-        
-        SortedDictionary<FixedPoint2, MobState> newDict = new SortedDictionary<FixedPoint2, MobState>();
-        newDict.Add(0, "Alive");
-        newDict.Add(newCrit, "Critical");
-        newDict.Add(newDead, "Dead");
-*/
-
-        threshDict = newDict;
+        threshDict.Thresholds = newDict;
     }
 }
