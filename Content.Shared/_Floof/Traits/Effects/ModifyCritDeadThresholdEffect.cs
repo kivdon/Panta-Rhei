@@ -29,16 +29,54 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
 
         //The new Dictionary we'll be playing with.
         SortedDictionary<FixedPoint2, MobState> newDict = new SortedDictionary<FixedPoint2, MobState>();
-        newDict.Add(0, "Alive");
+        newDict.Add(0, MobState.Alive);
 
         // Make some temporary values to capture the existing Crit and Dead values. 
-        //var newCrit = threshDict.FirstOrDefault(x => x.Value == "Critical").Key;
-        //var newDead = threshDict.FirstOrDefault(x => x.Value == "Dead").Key;
+        var newCrit = threshDict.Thresholds.FirstOrDefault(x => x.Value == "Critical").Key;
+        var newDead = threshDict.Thresholds.FirstOrDefault(x => x.Value == "Dead").Key;
 
         // Make some temporary values to capture the existing Crit and Dead values. 
-        var newCrit = 0f;
-        var newDead = 0f;
+        //var newCrit = 0f;
+        //var newDead = 0f;
 
+        if (newDead != null) {
+            //Make changes only if something is passed in via the trait.
+            if (DeadModifier != 0) {
+                newDead = newDead * DeadModifier;
+            }
+            
+            //Grab the existing Crit value. There shouldn't be a case in which we send in a Dict that doesn't have Crit, but let's account for that anyway.
+            if (newCrit != null) {
+                //Make changes only if something is passed in via the trait.
+                if (CritModifier != 0) {
+                  newCrit = newCrit * CritModifier;
+
+                  //Safeguard to make sure this value will not be too low, though this shouldn't happen.
+                  if (newCrit <= 5) {
+                    newCrit = 5;
+                  }
+                }
+                //Safeguard to make sure Dead is not less than or equal to Crit.
+                if (newDead <= newCrit) {
+                    newDead = newCrit + 0.1;
+                }
+                
+                newDict.Add(newCrit, MobState.Critical);
+                newDict.Add(newDead, MobState.Dead);
+            }
+            else { //I don't think there's a scenario in which a player will not have a Critical threshold, but just in case...
+                //There is no reason the Dead value should ever be 0 or lower, but just in case...
+                if (newDead <= 0) {
+                    newDead = 5;
+                }
+                newDict.Add(newDead, MobState.Dead);
+            }
+        }
+        else { //If the Dead threshold doesn't exist, something went horribly wrong. This should never happen, but just in case...
+            newDict.Add(1, MobState.Dead); //A value greater than 0.
+        }
+
+/*
         //Grab the existing Dead value
         if (threshDict.Thresholds.TryGetValue("Dead", out newDead)) {
             //Make changes only if something is passed in via the trait.
@@ -76,7 +114,7 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
             //This should never happen, but if there's no Dead value, there's a problem. Throw a value into it.
             newDict.Add(1, "Dead");
         }
-
+*/
 /*
         //Make changes only if something is passed in via the trait.
         if (CritModifier != 0} {
