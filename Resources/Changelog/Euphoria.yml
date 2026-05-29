@@ -3200,3 +3200,9 @@ Entries:
       message: Added Medical Tablet and Security Tablet!
   id: 401
   time: '2026-05-28T10:08:44.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Fix
+      message: Harpy purrs no longer have a chance to sound like an APLU.
+  id: 402
+  time: '2026-05-29T11:00:51.0000000+00:00'
