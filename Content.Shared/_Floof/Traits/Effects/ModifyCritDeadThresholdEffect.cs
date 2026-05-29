@@ -77,46 +77,6 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
             newDict.Add(1, MobState.Dead); //A value greater than 0.
         }
 
-/*
-        //Grab the existing Dead value
-        if (threshDict.Thresholds.TryGetValue("Dead", out newDead)) {
-            //Make changes only if something is passed in via the trait.
-            if (DeadModifier != 0) {
-                newDead = newDead * DeadModifier;
-            }
-            //Grab the existing Crit value. There shouldn't be a case in which we send in a Dict that doesn't have Crit, but let's account for that anyway.
-            if (threshDict.Thresholds.TryGetValue("Critical", out newCrit)) {
-                //Make changes only if something is passed in via the trait.
-                if (CritModifier != 0) {
-                  newCrit = newCrit * CritModifier;
-
-                  //Safeguard to make sure this value will not be too low, though this shouldn't happen.
-                  if (newCrit <= 5) {
-                    newCrit = 5;
-                  }
-                }
-                //Safeguard to make sure Dead is not less than or equal to Crit.
-                if (newDead <= newCrit) {
-                    newDead = newCrit + 0.1;
-                }
-                
-                newDict.Add(newCrit, "Critical");
-                newDict.Add(newDead, "Dead");
-            }
-            else { //In the unlikely event that there is no Critical at all.
-                //There is no reason the Dead value should ever be 0 or lower, but just in case...
-                if (newDead <= 0) {
-                    newDead = 5;
-                }
-                newDict.Add(newDead, "Dead");
-            }
-        }
-        else {
-            //This should never happen, but if there's no Dead value, there's a problem. Throw a value into it.
-            newDict.Add(1, "Dead");
-        }
-*/
-
-        threshDict.Thresholds = newDict;
+        threshDict.Thresholds = newDict; //This isn't working, says I only have Read access to Thresholds in MobThresholdComponent
     }
 }
