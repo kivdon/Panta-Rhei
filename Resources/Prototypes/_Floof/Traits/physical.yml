@@ -526,7 +526,57 @@
   description: trait-glassjaw-desc
   category: Skills
   cost: -2
+  conflicts:
+    - Tenacity
   effects:
   - !type:ModifyCritDeadThresholdEffect
     critModifier: 0.85 #-15%
+
+- type: trait
+  id: WillToDie
+  name: trait-willtodie-name
+  description: trait-willtodie-desc
+  category: Skills
+  cost: -1
+  conflicts:
+    - WillToLive
+  effects:
+  - !type:ModifyCritDeadThresholdEffect
+    deadModifier: 0.9 #-10%
+
+- type: trait
+  id: Tenacity
+  name: trait-tenacity-name
+  description: trait-tenacity-desc
+  category: Skills
+  cost: 3
+  conflicts:
+    - GlassJaw
+  effects:
+  - !type:ModifyCritDeadThresholdEffect
+    critModifier: 1.05 #+5%
+
+- type: trait
+  id: WillToLive
+  name: trait-willtolive-name
+  description: trait-willtolive-desc
+  category: Skills
+  cost: 2
+  conflicts:
+    - WillToDie
+  effects:
+  - !type:ModifyCritDeadThresholdEffect
+    deadModifier: 1.05 #+5%
+
+- type: trait
+  id: BrittleBones
+  name: trait-brittlebone-name
+  description: trait-brittlebone-desc
+  category: Skills
+  cost: -10
+  conflicts:
+    - Tenacity
+  effects:
+  - !type:ModifyCritDeadThresholdEffect
+    critModifier: 0.5 #-50%
 # =================================================== #
