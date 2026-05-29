@@ -74,3 +74,8 @@ trait-heatintolerance-desc =
 trait-heatintoleranceadvanced-name = Heat Intolerance - Advanced
 trait-heatintoleranceadvanced-desc = 
     You simply can't handle the heat. 
+
+trait-glassjaw-name = Glass Jaw
+trait-glassjaw-desc = 
+    Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
+    Your damage threshold for becoming Critical is decreased by 15%.
