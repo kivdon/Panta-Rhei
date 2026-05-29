@@ -1,4 +1,6 @@
 using Content.Shared._DV.Traits.Effects;
+using Content.Shared.FixedPoint;
+using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 
 namespace Content.Shared._Floof.Traits.Effects;
@@ -38,15 +40,15 @@ public sealed partial class ModifyCritDeadThresholdEffect : BaseTraitEffect
         var newDead = 0f;
 
         //Grab the existing Dead value
-        if (threshDict.TryGetValue("Dead", out newDead)) {
+        if (threshDict.Thresholds.TryGetValue("Dead", out newDead)) {
             //Make changes only if something is passed in via the trait.
-            if (DeadModifier != 0} {
+            if (DeadModifier != 0) {
                 newDead = newDead * DeadModifier;
             }
             //Grab the existing Crit value. There shouldn't be a case in which we send in a Dict that doesn't have Crit, but let's account for that anyway.
-            if (threshDict.TryGetValue("Critical", out newCrit)) {
+            if (threshDict.Thresholds.TryGetValue("Critical", out newCrit)) {
                 //Make changes only if something is passed in via the trait.
-                if (CritModifier != 0} {
+                if (CritModifier != 0) {
                   newCrit = newCrit * CritModifier;
 
                   //Safeguard to make sure this value will not be too low, though this shouldn't happen.
