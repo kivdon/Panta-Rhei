@@ -175,6 +175,39 @@ namespace Content.Server.Administration.Systems
                         Impact = LogImpact.High,
                     });
 
+                    // Cryo - Instantly cryo's the target.
+                    args.Verbs.Add(new Verb()
+                    {
+                        Text = Loc.GetString("admin-player-actions-cryo"),
+                        Category = VerbCategory.Admin,
+                        Act = () =>
+                        {
+                            // find any cryostorage machine and pick the first one
+        var query = EntityQueryEnumerator<CryostorageComponent>();
+        EntityUid? cryoUnit = null;
+        while (query.MoveNext(out var uid, out _)){
+            cryoUnit = uid;
+            break;
+        }
+
+        //in rare case there is no cryostorage machine just return and delete the person
+        if (cryoUnit == null){
+            QueueDel(args.Target);
+            return;
+        }
+
+        // put the person in cryostorage and apply the required effects
+        var contained = EnsureComp<CryostorageContainedComponent>(args.Target);
+        contained.Cryostorage = cryoUnit.Value;
+        _mind.TryGetMind(args.Target, out var mindId, out var mindComp);
+        var userId = mindComp?.UserId;
+        _cryo.HandleEnterCryostorage((args.Target, contained), userId);
+
+                        },
+                        ConfirmationPopup = true,
+                        Impact = LogImpact.High,
+                    });
+
                     // Clone - Spawn but without the mind transfer, also spawns at the user's coordinates not the target's
                     args.Verbs.Add(new Verb()
                     {
