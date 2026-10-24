@@ -18,3 +18,5 @@ trait-healing-plus-2-name = Regeneration: Superior
 trait-healing-plus-2-desc = Your ability to heal is even better, but you have increased thirst and hunger.
 trait-pettable-name = Pettable
 trait-pettable-desc = You are very pettable, you find that crew members have a much easier time petting you on the top of your floofy head...
+trait-tooshort-name = Too Short
+trait-tooshort-desc = You're too short to reach many things. You may need to stand on a chair, or get picked up by someone else. 
