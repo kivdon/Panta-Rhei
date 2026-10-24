@@ -443,3 +443,25 @@
       interactSuccessSpawn: EffectHearts
       interactSuccessSound:
         path: /Audio/Animals/fox_squeak.ogg
+
+- type: trait
+  id: TooShort
+  name: trait-tooshort-name
+  description: trait-tooshort-desc
+  category: BonusPhysical
+  cost: -2
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Allulalo
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: TooShortForUI
+      blacklist:
+        components:
+        - TooShortForUIBlacklist
+      whitelist:
+        components:
+        - TooShortForUIWhitelist
